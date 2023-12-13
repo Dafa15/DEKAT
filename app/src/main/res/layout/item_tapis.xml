@@ -21,8 +21,7 @@
         android:fontFamily="@font/poppins_bold"
         android:textColor="@color/white"
         android:layout_gravity="bottom"
-        android:textSize="32sp"
-        android:textAlignment="center"/>
+        android:textSize="32sp"/>
 
 
 </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
