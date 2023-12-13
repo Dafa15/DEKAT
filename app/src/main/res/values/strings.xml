@@ -17,4 +17,11 @@
     <string name="home">Home</string>
     <string name="scan">Scan</string>
     <string name="favorite">Favorite</string>
+    <string name="searchbar_hint">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_scan1">Pindai Kain Tapis</string>
+    <string name="tv_scan2">Silahkan foto kain Tapis untuk mengetahui motifnya</string>
+    <string name="tv_scan3">Pindai</string>
+    <string name="kain_tapis">Nama Tapis</string>
 </resources>

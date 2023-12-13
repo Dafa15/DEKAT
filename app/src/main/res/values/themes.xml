@@ -6,6 +6,10 @@
         <item name="colorPrimaryVariant">@color/orange</item>
         <item name="colorOnPrimary">@color/black</item>
 
+        <item name="android:windowBackground">@color/white_bone</item>
+        <item name="android:textColor">@color/black</item>
+
+
     </style>
     <style name="Theme.DEKAT" parent="Base.Theme.DEKAT" />
 </resources>
