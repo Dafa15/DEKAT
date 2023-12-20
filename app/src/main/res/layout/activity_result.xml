@@ -6,10 +6,10 @@
     android:layout_height="wrap_content"
     tools:context=".ui.result.ResultActivity">
 
-        <com.google.android.material.card.MaterialCardView
+    <com.google.android.material.card.MaterialCardView
             android:id="@+id/image_result"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="250dp"
+            android:layout_height="320dp"
             app:cardCornerRadius="20dp"
             app:cardElevation="4dp"
             android:layout_marginTop="50dp"
@@ -25,69 +25,45 @@
                 android:layout_gravity="center"
                 android:scaleType="centerCrop"
                 tools:srcCompat="@tools:sample/avatars" />
-
         </com.google.android.material.card.MaterialCardView>
 
-    <Button
-        android:id="@+id/result_1"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/fabric_result"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result"
-        android:textSize="16dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/fabric_brand"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_result" />
+
+    <Button
+        android:id="@+id/btn_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:fontFamily="@font/poppins_medium"
-        android:background="@drawable/rounded_result"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/detai_fabric"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/btn_gallery"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_result" />
+        app:layout_constraintTop_toBottomOf="@id/fabric_result" />
 
     <Button
-        android:id="@+id/result_2"
-        android:layout_width="match_parent"
+        android:id="@+id/btn_gallery"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Result"
-        android:textSize="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:fontFamily="@font/poppins_medium"
-        android:background="@drawable/rounded_result"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/find_loc"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result_1" />
-
-    <Button
-        android:id="@+id/result_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Result"
-        android:textSize="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:fontFamily="@font/poppins_medium"
-        android:background="@drawable/rounded_result"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result_2" />
-
-    <Button
-        android:id="@+id/result_4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Result"
-        android:textSize="16dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:fontFamily="@font/poppins_medium"
-        android:background="@drawable/rounded_result"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result_3" />
-
-
+        app:layout_constraintStart_toEndOf="@+id/btn_detail"
+        app:layout_constraintTop_toBottomOf="@id/fabric_result" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,4 +26,16 @@
     <string name="description">Deskripsi :</string>
     <string name="detail_fabric">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
     <string name="find_location">Cari Lokasi Terdekat</string>
+    <string name="scan_desc">Dengan memindai kain Tapismu, aplikasi akan menganalisis pola dan memberikan informasi yang relevan terkait kain Tapis anda.</string>
+    <string name="loc_desc">Anda tidak hanya bisa mengeksplorasi keindahan dan detil dari Kain Tapis, tetapi juga mendapatkan informasi tentang lokasi-lokasi terdekat yang menyediakan Kain Tapis yang sesuai dengan preferensi Anda</string>
+    <string name="knowledge_desc">Kain tapis memiliki banyak kegunaan, mulai dari busana adat, hiasan dinding, hingga souvenir. Kain tapis juga memiliki nilai simbolis dan spiritual yang penting dalam budaya Lampung.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc_find_location">Temukan Lokasi Kainmu</string>
+    <string name="scan_on_board">Pindai Kain Tapismu</string>
+    <string name="desc_logo">Deteksi Kain Tapis</string>
+    <string name="desc_kegunaan">Keindahan dan Kegunaan</string>
+    <string name="learn_more">Yuk Cari Tau Lebih Banyak!</string>
+    <string name="detai_fabric">Detail Kain</string>
+    <string name="find_loc">Cari lokasi</string>
 </resources>
