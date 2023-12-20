@@ -41,7 +41,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap = googleMap
         getMyLocation()
         storeMarker()
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(-5.410973980698464, 105.2570086517709),5f))
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(LatLng(-5.410973980698464, 105.2570086517709),10f))
         mMap.uiSettings.isZoomControlsEnabled = true
         mMap.uiSettings.isIndoorLevelPickerEnabled = true
         mMap.uiSettings.isCompassEnabled = true

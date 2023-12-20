@@ -14,22 +14,22 @@
             android:id="@+id/action_splashFragment_to_viewPagerFragment"
             app:destination="@id/viewPagerFragment" />
         <action
-            android:id="@+id/action_splashFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_splashFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
     </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.capstone.dekat.ui.home.HomeActivity"
+        android:label="home_activity"
+        tools:layout="@layout/activity_home"/>
 
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.capstone.dekat.ui.home.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/viewPagerFragment"
         android:name="com.capstone.dekat.ui.onboarding.ViewPagerFragment"
         android:label="fragment_view_pager"
         tools:layout="@layout/fragment_view_pager" >
         <action
-            android:id="@+id/action_viewPagerFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_viewPagerFragment_to_homeActivity"
+            app:destination="@id/homeActivity" />
     </fragment>
 </navigation>

@@ -20,7 +20,7 @@ class ScreenThird : Fragment() {
         val view = inflater.inflate(R.layout.fragment_screen_third, container, false)
 
         view.findViewById<Button>(R.id.btn_learn_more).setOnClickListener {
-            findNavController().navigate(R.id.action_viewPagerFragment_to_homeFragment)
+            findNavController().navigate(R.id.action_viewPagerFragment_to_homeActivity)
             onBoardingFinished()
         }
 
