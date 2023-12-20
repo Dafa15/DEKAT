@@ -23,7 +23,19 @@
     <string name="tv_scan3">Pindai</string>
     <string name="kain_tapis">Nama Tapis</string>
     <string name="fabric_brand"> Kain Silung</string>
-    <string name="description">Deskripsi :</string>
+    <string name="description">Deskripsi:</string>
     <string name="detail_fabric">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
     <string name="find_location">Cari Lokasi Terdekat</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="tv_toolbar">Title</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_about">"DEKAT (Deteksi Kain Tapis) adalah sebuah solusi inovatif yang bertujuan untuk merawat dan melestarikan kekayaan budaya Lampung. Aplikasi ini berfungsi sebagai sarana edukasi dan promosi yang memungkinkan pengguna mengenali dan memahami kain Tapis Lampung yang terkenal dengan keindahan motif khasnya serta nilai sejarah yang mendalam. "</string>
+    <string name="about">About</string>
+    <string name="tv_kegunaan">Kegunaan: </string>
+    <string name="value_kegunaan">kegunaan value</string>
+    <string name="tv_makna">Makna:</string>
+    <string name="value_makna">makna value</string>
+    <string name="logo">Logo</string>
+    <string name="result">Result</string>
 </resources>

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.capstone.dekat.R
 import com.capstone.dekat.databinding.ActivityHomeBinding
+import com.capstone.dekat.ui.about.AboutFragment
 import com.capstone.dekat.ui.scan.ScanActivity
 
 class HomeActivity : AppCompatActivity() {
@@ -22,6 +23,7 @@ class HomeActivity : AppCompatActivity() {
         binding.bottomNavView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.home -> replaceFragment(HomeFragment())
+                R.id.about -> replaceFragment(AboutFragment())
             }
             true
         }

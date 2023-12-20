@@ -9,19 +9,23 @@
     <FrameLayout
         android:id="@+id/nav_host_fragment"
         android:layout_width="match_parent"
-        android:layout_height="650dp"/>
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomAppBar"
+        android:layout_marginBottom="90dp"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_scan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginBottom="20dp"
         android:layout_gravity="bottom|center"
         android:src="@drawable/ic_scan"
         android:elevation="20dp"
-        app:borderWidth="0dp"
-        android:backgroundTint="@color/yellow"
-        app:maxImageSize="40dp"/>
+        android:backgroundTint="@color/brown"
+        app:maxImageSize="50dp"
+        app:fabCustomSize="70dp"
+        app:tint="@color/white"
+        />
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
@@ -29,8 +33,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:backgroundTint="@color/white"
-        app:fabCradleMargin="10dp"
-        app:fabCradleRoundedCornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:addElevationShadow="true"
@@ -38,14 +40,14 @@
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:background="@color/white"
             app:itemIconTint="@color/black"
+            android:layout_marginEnd="10dp"
             app:itemTextAppearanceActiveBoldEnabled="true"
             app:menu="@menu/bottom_navbar"
-            app:itemIconSize="32dp"/>
+            app:itemIconSize="40dp" />
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 
