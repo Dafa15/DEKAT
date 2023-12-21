@@ -80,8 +80,10 @@ class ScanActivity : AppCompatActivity() {
                 val intent = Intent(this@ScanActivity, ResultActivity::class.java)
                 intent.putExtra(ResultActivity.RESULT_IMAGE, uploadResult.tapisImage)
                 intent.putExtra(ResultActivity.RESULT_NAME, uploadResult.tapisName)
-                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                intent.putExtra(ResultActivity.RESULT_ID, uploadResult.tapisId)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(intent)
+                finish()
                 }
             }
 

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     tools:context=".ui.result.ResultActivity">
 
     <include
@@ -36,7 +36,7 @@
                 android:scaleType="centerCrop"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:srcCompat="@tools:sample/avatars" />
+                tools:srcCompat="@tools:sample/avatars"/>
 
             <TextView
                 android:id="@+id/tv_result"
@@ -57,6 +57,32 @@
 
 
     </com.google.android.material.card.MaterialCardView>
+
+    <Button
+        android:id="@+id/btn_detail"
+        android:layout_width="134dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/brown"
+        android:text="@string/detail"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/image_result"
+        app:layout_constraintTop_toBottomOf="@+id/image_result" />
+
+    <Button
+        android:id="@+id/btn_map"
+        android:layout_width="134dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/brown"
+        android:text="@string/lokasi"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/image_result"
+        app:layout_constraintTop_toBottomOf="@+id/image_result" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,6 +9,7 @@ import com.capstone.dekat.databinding.ActivityResultBinding
 import com.capstone.dekat.databinding.ActivityScanBinding
 import com.capstone.dekat.ui.detail.DetailActivity
 import com.capstone.dekat.ui.home.HomeActivity
+import com.capstone.dekat.ui.maps.MapsActivity
 
 class ResultActivity : AppCompatActivity() {
     private lateinit var binding: ActivityResultBinding
@@ -16,6 +17,7 @@ class ResultActivity : AppCompatActivity() {
     companion object {
         const val RESULT_NAME = "result_name"
         const val RESULT_IMAGE =  "result_image"
+        const val RESULT_ID = "result_id"
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityResultBinding.inflate(layoutInflater)
@@ -24,6 +26,7 @@ class ResultActivity : AppCompatActivity() {
 
         val resultName = intent.getStringExtra(RESULT_NAME)
         val resultImage  = intent.getStringExtra(RESULT_IMAGE)
+        val resultId = intent.getStringExtra(RESULT_ID)
 
         Glide.with(this@ResultActivity)
             .load(resultImage)
@@ -31,14 +34,24 @@ class ResultActivity : AppCompatActivity() {
         binding.tvResult.text = resultName
 
         customToolbar()
+
+        binding.btnMap.setOnClickListener {
+            val intent = Intent(this@ResultActivity, MapsActivity::class.java)
+            startActivity(intent)
+        }
+        binding.btnDetail.setOnClickListener {
+            val intent = Intent(this@ResultActivity, DetailActivity::class.java)
+            intent.putExtra(DetailActivity.TAPIS_ID, resultId)
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
+            finish()
+        }
     }
 
     private fun customToolbar() {
         binding.apply {
             toolbar.navBack.setOnClickListener {
-                val intent = Intent(this@ResultActivity, HomeActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                startActivity(intent)
+                onBackPressed()
             }
             toolbar.tvToolbarName.text = "Result"
         }

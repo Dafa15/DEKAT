@@ -8,5 +8,8 @@ data class ScanTapisResponse(
 	val tapisImage: String,
 
 	@field:SerializedName("tapisName")
-	val tapisName: String
+	val tapisName: String,
+
+	@field:SerializedName("tapisId")
+	val tapisId: String
 )

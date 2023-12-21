@@ -48,4 +48,6 @@
     <string name="learn_more">Yuk Cari Tau Lebih Banyak!</string>
     <string name="detai_fabric">Detail Kain</string>
     <string name="find_loc">Cari lokasi</string>
+    <string name="detail">Detail</string>
+    <string name="lokasi">Lokasi</string>
 </resources>
