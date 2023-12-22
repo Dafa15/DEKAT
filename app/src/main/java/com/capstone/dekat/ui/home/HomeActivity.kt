@@ -1,5 +1,6 @@
 package com.capstone.dekat.ui.home
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -41,4 +42,10 @@ class HomeActivity : AppCompatActivity() {
             .replace(R.id.nav_host_fragment, fragment)
             .commit()
     }
+
+    @SuppressLint("MissingSuperCall")
+    override fun onBackPressed() {
+        finishAffinity()
+    }
+
 }
